@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <!-- Define persistence unit -->
+    <persistence-unit name="persistenceUnit">
+        <class>com.cmpe202teamproject.obs.Model.Account</class>
+        <class>com.cmpe202teamproject.obs.Model.Customer</class>
+        <class>com.cmpe202teamproject.obs.Model.ExternalPayee</class>
+        <class>com.cmpe202teamproject.obs.Model.Payment</class>
+        <class>com.cmpe202teamproject.obs.Model.Transfer</class>
+        <class>com.cmpe202teamproject.obs.Model.Deposit</class>
+        <class>com.cmpe202teamproject.obs.Model.Checks</class>
+        <class>com.cmpe202teamproject.obs.Model.Fees</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+        </properties>
+    </persistence-unit>
+</persistence>
